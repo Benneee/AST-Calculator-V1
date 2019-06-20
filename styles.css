@@ -1,20 +1,16 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   padding: 0;
   margin: 0;  
+  overflow: hidden;
 }
+
 
 #outer-section {
   position: relative;
   width: 100%;
   height: 100vh;
-
-  /* ToDo: Add a background-image - preferably an image of a beam/beams*/
-  /* background-image: url() */
-
+  background-image: url(assets/building.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,8 +22,79 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column
+  flex-direction: column;
+  text-align: center;
 }
+
+
+.input-group {
+  position: relative;
+  left: 35vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group-text {
+  display: -ms-flexbox;
+  display: flex;
+  align-items: stretch;
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  /* text-align: center; */
+  /* white-space: nowrap; */
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.form-control {
+  display: block;
+  /* width: 100%; */
+  /* height: calc(1.5em + .75rem + 2px); */
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+h1 {
+  font-size: 2.5em;
+  display: block;
+  color: white;
+}
+
+.card {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+
+
 
 
