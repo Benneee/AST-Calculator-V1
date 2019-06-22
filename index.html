@@ -79,26 +79,60 @@
                           <div class="input-group">
                             <input type="number" class="form-control" id="depth-of-beam" placeholder="Fcu, Characteristic Strength of Concrete">
                             <div class="input-group-postpend">
-                                <span class="input-group-text fcu">N/mm</span>
+                                <span class="input-group-text">N/mm</span>
                               </div>
                           </div>
                         </div>
-                        
-        
+
+                        <input type="submit" value="Calculate" class="btn-block">
+                              
                 </form>
+
+              </div>
+
                 
 
                 <!-- Loader Thingy here -->
 
                 <div id="loading">
-
+                  <img class="loader" src="assets/loading.gif" alt="">
                 </div>
 
                 <!-- The Results Here -->
 
+                <div id="results">
+                  <h3 class="text-center">Results</h3>
+                  <div class="results-wrap">
+
+                    <div class="form-group">
+                        <div class="input-group">
+                          
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Overall depth (mm)</span>
+                          </div>
+
+                          <input type="number" class="results-control" id="overall-depth-of-beam">                 
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                          <div class="input-group">
+                            
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">Area of Steel (mm <sup>2</sup>)</span>
+                            </div>
+  
+                            <input type="number" class="results-control" id="overall-depth-of-beam">                 
+                          </div>
+                        </div>                     
+
+                  </div>
+    
+
+                </div>
 
 
-          </div>
+
         </div>
         
       </section>
