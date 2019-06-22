@@ -1,20 +1,18 @@
+/* Primary CSS */
+
 * {
   box-sizing: border-box;
-}
-
-body {
   padding: 0;
   margin: 0;  
 }
 
+
+/* Overlay Thingy */
 #outer-section {
   position: relative;
   width: 100%;
   height: 100vh;
-
-  /* ToDo: Add a background-image - preferably an image of a beam/beams*/
-  /* background-image: url() */
-
+  background-image: url(assets/building.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +25,146 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  flex-direction: column
+  overflow: auto;
+  /* flex-direction: column; */
+  /* text-align: center; */
 }
+
+/* Utility Classes */
+.text-center {
+  text-align: center !important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+/* Form Styling */
+
+.container {
+  /* Touch this! */
+  margin: 40px 0px;
+  padding: 30px;
+  background: transparent;
+  max-width: 1100px;
+} 
+
+.form-wrap {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container .title {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.info {
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group .input-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.form-group .input-group input.form-control {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+/* Postpend */
+.form-group .input-group .input-group-postpend {
+  padding: 10px;
+}
+
+.form-group .input-group .input-group-postpend .input-group-text {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 9px;
+  color: #495057;
+  background: rgb(255, 250, 250);
+  margin-left: -7px;
+}
+
+/* Prepend */
+/* .form-group .input-group .input-group-prepend {
+  padding: 10px;
+}
+
+.form-group .input-group .input-group-prepend .input-group-text {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 9px;
+  color: #495057;
+  background: rgb(255, 250, 250);
+  margin-right: -7px;
+} */
+
+/* Placeholder text */
+::-webkit-input-placeholder { /* Edge */
+  font-size: 0.7em;
+  color: black;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 0.7em;
+  color: black;
+}
+
+::placeholder {
+  font-size: 0.7em;
+  color: black;
+}
+
+@media only screen and (max-width: 900px) {
+  .form-group .input-group input.form-control {
+    width: 55vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-group .input-group input.form-control {
+    width: 50vw;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    font-size: 0.6em;
+    color: black;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 0.6em;
+    color: black;
+  }
+  
+  ::placeholder {
+    font-size: 0.6em;
+    color: black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
