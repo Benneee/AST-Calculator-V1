@@ -47,7 +47,7 @@ body {
 
 .container {
   /* Touch this! */
-  margin: 40px 0px;
+  margin: 20px 0px;
   padding: 30px;
   background: transparent;
   max-width: 1100px;
@@ -105,19 +105,54 @@ body {
   margin-left: -7px;
 }
 
+
+/* Results Section */
+
+#results {
+  /* Set this to none later */
+  display: none;
+}
+
+.results-wrap {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+#results h3 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.results-wrap .form-group .input-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  /* width: 100%; */
+}
+
+
 /* Prepend */
-/* .form-group .input-group .input-group-prepend {
-  padding: 10px;
+.form-group .input-group .input-group-prepend {
+  padding: 11px;
 }
 
 .form-group .input-group .input-group-prepend .input-group-text {
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   padding: 9px;
-  color: #495057;
-  background: rgb(255, 250, 250);
-  margin-right: -7px;
-} */
+  color: black;
+  background: rgba(255, 250, 250, 0.455);
+  margin-right: -9.5px;
+}
+
+
+.form-group .input-group input.results-control {
+  padding: 10.9px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  width: 250px;
+}
 
 /* Placeholder text */
 ::-webkit-input-placeholder { /* Edge */
@@ -135,6 +170,17 @@ body {
   color: black;
 }
 
+.btn-block {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.373);
+}
+
+/* Adjust input and postpend */
+
 @media only screen and (max-width: 900px) {
   .form-group .input-group input.form-control {
     width: 55vw;
@@ -147,11 +193,41 @@ body {
   .form-group .input-group .input-group-postpend {
     margin-top: -2px;
   }
+
+  .form-group .input-group input.results-control {
+    width: 47vw;
+  }
+  .form-group .input-group .input-group-prepend .input-group-text {
+    font-size: 0.7em;
+    padding: 10px;
+  }
+
+  .form-group .input-group .input-group-prepend {
+    margin-top: -2px;
+  }
+
+  img.loader {
+    display: none;
+    margin: 10px auto;
+    width: 50%;
+    height: 50%;
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
   .form-group .input-group input.form-control {
     width: 45vw;
+  }
+
+  .results-wrap .form-group .input-group {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .form-group .input-group input.results-control {
+    width: 40vw;
+    padding: 9px;
   }
 
   ::-webkit-input-placeholder { /* Edge */
@@ -177,8 +253,33 @@ body {
     font-size: 0.7em;
     padding: 10px;
   }
+
+  
+  .form-group .input-group .input-group-prepend {
+    margin-right: 4px;
+    padding: 7px;
+  }
+
+  .form-group .input-group .input-group-prepend .input-group-text {
+    font-size: 0.5em;
+    padding: 10px;
+  }
+
+  img.loader {
+    display: none;
+    margin: 10px auto;
+    width: 50%;
+    height: 50%;
+  }
 }
 
+
+img.loader {
+  display: none;
+  margin: 10px auto;
+  width: 50%;
+  height: 50%;
+}
 
 
 
