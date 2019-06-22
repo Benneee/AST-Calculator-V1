@@ -15,25 +15,79 @@
       <section id="inner-section">
 
 
-        <div class="card card-body text-center">
-            <form id="ast-form">
+        <div class="container">
+          <h2 class="title text-center">Ast-Calculator</h2>
+          <p class="info text-center">Calculate area of steel for beam section</p>
 
-                <div class="form-group">
-                  <div class="input-group">
-                    <input type="number" class="form-control" id="width-of-beam" placeholder="Width of Beam">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">mm</span>
-                      </div>
+          <div class="form-wrap">
+
+              <form id="ast-form">
+
+                <!-- Width of beam -->
+
+                  <div class="form-group">
+                    <div class="input-group">
+                    <!-- <div class="input-group-prepend">
+                        <span class="input-group-text">b</span>
+                      </div> -->
+                      <input type="number" class="form-control" id="width-of-beam" placeholder="b, Width of Beam">
+                      <div class="input-group-postpend">
+                          <span class="input-group-text">mm</span>
+                        </div>
+                    </div>
                   </div>
-                </div>
-      
-      
-              </form>
 
+                  <!-- Depth of beam -->
+  
+                  <div class="form-group">
+                    <div class="input-group">
+                   
+                      <input type="number" class="form-control" id="depth-of-beam" placeholder="d, Depth of Beam">
+                      <div class="input-group-postpend">
+                          <span class="input-group-text">mm</span>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- Design moment -->
+
+                  <div class="form-group">
+                      <div class="input-group">
+                         
+                        <input type="number" class="form-control" id="depth-of-beam" placeholder="M, Design Moment">
+                        <div class="input-group-postpend">
+                            <span class="input-group-text">mm</span>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- Characteristic Strength of Steel -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                          <input type="number" class="form-control" id="depth-of-beam" placeholder="Fy, Characteristic Strength of Steel">
+                          <div class="input-group-postpend">
+                              <span class="input-group-text">mm</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <!-- Characteristic strength of concrete -->
+                      <div class="form-group">
+                          <div class="input-group">
+                            <input type="number" class="form-control" id="depth-of-beam" placeholder="Fcu, Characteristic Strength of Concrete">
+                            <div class="input-group-postpend">
+                                <span class="input-group-text">mm</span>
+                              </div>
+                          </div>
+                        </div>
+                        
+        
+                </form>
+
+          </div>
         </div>
-
-     
-
+        
       </section>
     </article> 
   </main>
