@@ -111,6 +111,7 @@ body {
 #results {
   /* Set this to none later */
   display: none;
+  /* display: block; */
 }
 
 .results-wrap {
@@ -284,6 +285,13 @@ img.loader {
   margin: 10px auto;
   width: 50%;
   height: 50%;
+}
+
+.alert-danger {
+  color: red;
+  background: white;
+  border-radius: 5px;
+  padding: 8px;
 }
 
 
