@@ -10,4 +10,4 @@ This calculator will consider the following conditions
 e.g Fy => The Characteristic Strength of Steel, usually between 410N/mm^2 and 460N/mm^2  
     Fcu => The Characteristic Strength of Concrete would also be provided.
 
-This calculator can be used for simple classroom calculations. Further versions will considered 'Doubly Reinforced Sections', no Ultimate Moment provided and other edge conditions.
+This calculator can be used for simple classroom calculations. Further versions will consider 'Doubly Reinforced Sections', no Ultimate Moment provided and other edge conditions.
